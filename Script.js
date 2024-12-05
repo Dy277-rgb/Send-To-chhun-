@@ -5,8 +5,7 @@ const nobnt = document.querySelector(".no-btn");
 
 yesbnt.addEventListener("click", () => {
   question.innerHTML = "Right Now I Got You My Girlfiend 🩷";
-  gif.src =
-    "https://i.pinimg.com/originals/54/af/a0/54afa0c1cf345d3b30c21802e73cf2aa.gif";
+  gif.src = "photos.jpg";
 });
 nobnt.addEventListener("mouseover", () => {
   const nobntRect = nobnt.getBoundingClientRect();
