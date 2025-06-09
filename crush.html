@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Will You Be My Girlfriend?</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-pink-50">
+
+  <div id="mainContent" class="text-center">
+    <!-- First Page -->
+    <h1 id="mainText" class="text-3xl font-bold text-pink-600 mb-6">Will you be my girlfriend ?</h1>
+    
+    <img 
+      id="mainImage"
+
+      src="https://cdn.cdnstep.com/R6iBplyzxEgxs2fIX4Xr/0-1.thumb128.webp" 
+      alt="Cute character" 
+      class="w-40 h-40 mx-auto bg-white border rounded-lg border-gray-300 shadow-md"
+    />
+    <br>
+    <div id="buttons" class="space-x-4">
+      <button 
+        onclick="handleYes()" 
+        class="px-6 py-2 bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded"
+      >
+        Yes
+      </button>
+      <button 
+        onclick="handleNo()" 
+        class="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded"
+      >
+        No
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function handleYes() {
+      // Change the text
+      document.getElementById('mainText').textContent = "Yay! 💖 I'm so happy to have you!";
+      
+      // Change the image
+      document.getElementById('mainImage').src="photos.jpg"; // you can use your own
+
+      // Optionally hide the buttons
+      document.getElementById('buttons').style.display = 'none';
+    }
+
+    function handleNo() {
+      // Change the text
+      document.getElementById('mainText').textContent = "!Do not like this chhun 😭";
+      
+      // Change the image
+      document.getElementById('mainImage').src="https://cdn.cdnstep.com/1qI2dUmv0XQGHScRRLqO/16-1.thumb128.png"; // you can use your own
+
+      // Optionally hide the buttons
+      document.getElementById('buttons').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
